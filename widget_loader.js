@@ -20,12 +20,12 @@
         })
         .catch(err => console.error("Formamind widget JS failed:", err));
 
-        // Load CSS via <link>
-        const cssUrl = `${workerBase}/css?key=${encodeURIComponent(window.FMD_ID)}`;
-        const link = document.createElement("link");
-        link.rel = "stylesheet";
-        link.href = cssUrl;
-        document.head.appendChild(link);
+        // // Load CSS via <link>
+        // const cssUrl = `${workerBase}/css?key=${encodeURIComponent(window.FMD_ID)}`;
+        // const link = document.createElement("link");
+        // link.rel = "stylesheet";
+        // link.href = cssUrl;
+        // document.head.appendChild(link);
 
     } catch (e) {
         console.error("Formamind loader error:", e);
